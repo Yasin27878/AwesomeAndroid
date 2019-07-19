@@ -28,7 +28,11 @@ class MainActivity : AppCompatActivity() {
                 .setAction("Action", null).show()
         }
 
-        // add activity url to list
+        /**
+         * add activity url to list
+         * for example  :
+         *  list.add(MainEntity("视频浏览", "com.a.b.VideoActivity"))
+         */
         var list = ArrayList<MainEntity>()
         for (i: Int in 0..10) {
             list.add(MainEntity("测试" + i, ""))
